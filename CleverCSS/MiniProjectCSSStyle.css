@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.bgColor {
+  background-color: midnightblue;
+}
+
+.container {
+  text-align: center;
+  max-width: 1500px;
+  height:100%;
+  margin: 0, auto;
+  padding-top: 60px;
+  border: 1px solid blue;
+  background: url(../CleverPictures/Milkyway_earth.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container h2 {
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  flex-direction: wrap;
+  margin-top: 10px;
+}
+
+.flex-container div img {
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.flex-container-2 {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+  flex-direction: wrap;
+}
+
+.flex-container-2 div {
+  /* border: 1px solid black; */
+  padding: 20px;
+}
+#CatMain {
+  margin-left: 40px;
+}
+.flex-container-2 img {
+  /* border: 2px solid #40E0D0; */
+  margin-right: 30px;
+  margin-top: 20px;
+  -webkit-box-shadow: -15px 10px 5px 0px rgba(64, 224, 208, 1);
+  -moz-box-shadow: -15px 10px 5px 0px rgba(64, 224, 208, 1);
+  box-shadow: -15px 10px 5px 0px rgba(64, 224, 208, 1);
+}
+
+.flex-container-3 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: wrap;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.cleverRPSContainer{
+  height:150px;
+  border:1px solid green;
+  
+}
+
+.cleverRPSStartHover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+  height:150px;
+  /* border:3px solid red; */
+  z-index:50;
+  width: 73%;
+}
+
+.flex-container-4-Pt1 {
+
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: wrap; */
+  /* margin-top: 20px;
+  margin-left: 30px; */
+  flex-grow:2;
+  opacity: .2;
+  
+
+}
+
+.flex-container-4 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: wrap;
+  margin-top: 20px;
+  margin-left: 30px;
+  border:1px solid green;
+}
+
+.flex-container-4-Pt1 img:hover {
+  -webkit-box-shadow: -2px 2px 5px 7px rgba(0, 0, 255, 1);
+  -moz-box-shadow: -2px 2px 5px 7px rgba(0, 0, 255, 1);
+  box-shadow: -2px 2px 5px 7px rgba(0, 0, 255, 1);
+}
+
+.images img {
+  width: 300px;
+  height: 250px;
+}
+
+/* CSS for RPS dropdown */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+  text-decoration: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Change Button CSS */
+
+.buttonChangeContainer, .blackjackContainer{
+  margin-top:90px;
+  border:1px solid red;
+}
+
+.buttonChangeContainer div{
+  margin-right:27px;
+}
+
+.buttonChangeContainer h1{
+  color:white;
+}
+
+/* Black Jack css */
+.blackjackContainer{
+  width:100%;
+  background-color:#006A4E;
+  text-align:center;
+  margin-top:10px;
+}
+.blackjackContainer h1{
+  color:white;
+}
+
+.flexbox-BJ-row1-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: wrap;
+  border:1px solid green;
+}
+
+.BJUserContainer, .BJBotContainer{
+  border:1px solid purple;
+  flex:1;
+  height:500px;
+
+}
+
+.BJUserContainer img, .BJBotContainer img{
+  padding:10px;
+}
+
+.GameButtonContainer{
+  display:flex;
+  justify-content:center;
+  border: 1px solid red;
+}
+.GameButtonContainer div{
+  display:flex;
+  justify-content:center;
+  border:1px solid green;
+}
+
+.GameWinLossDrawTotal{
+  display:flex;
+  justify-content:center;
+  margin-top:10px;
+}
+.GameWinLossDrawTotal table, th, td{
+  color:white;
+  border:1px solid white;
+}

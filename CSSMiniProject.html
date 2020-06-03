@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Clever Programmer Site 1</title>
+
+
+    <!-- Lin Below helps deal with icon error -->
+    <link rel="icon" href="data:;base64,=">
+    <!-- local css -->
+    <link
+      href="CleverCSS/MiniProjectCSSStyle.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body class="bgColor">
+    <div class="container">
+      <div class="AgeContainer">
+        <h2>
+          Challenge 1: Age in<br />
+          Days
+        </h2>
+        <div class="flex-container">
+          <div>
+            <button
+              id="ClickMe"
+              onclick="BirthorYear()"
+              type="button"
+              class="btn btn-primary"
+            >
+              Click Me
+            </button>
+          </div>
+
+          <div>
+            <button
+              id="ResetMe"
+              onclick="ResetCalcAgeDays()"
+              type="button"
+              class="btn btn-danger"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+        <div class="flex-container">
+          <div id="Age-In-Days-Result"></div>
+        </div>
+      </div>
+      <div class="catGenContainer">
+        <h2 style="padding: 50px;">Challenge 2: Cat Generator</h2>
+        <div class="flex-container">
+          <div>
+            <button
+              id="CatOneButton"
+              style="margin: auto;"
+              onclick="MultipleRandomCatPic()"
+              type="button"
+              class="btn btn-success"
+            >
+              Generate Cat
+            </button>
+          </div>
+          <div>
+            <button
+              id="CatTwoButton"
+              style="margin: auto;"
+              onclick="SpecificCatGifsLoop()"
+              type="button"
+              class="btn btn-info"
+            >
+              Generate Cat 2
+            </button>
+          </div>
+          <div>
+            <button
+              id="ResetMeTwo"
+              onclick="ResetCalcAgeDaysTwo()"
+              type="button"
+              class="btn btn-danger"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container-2">
+        <div id="CatMain"></div>
+      </div>
+      <div class="RPS1Container">
+        <h1 id="RPSOneTitle" style="color: white;">
+          Challenge 3 Pt.1: Rock, Paper, Scissors
+        </h1>
+        <!-- Code for dropdown to choose between RPS options -->
+
+        <div class="flex-container-4">
+          <div id="dropdown-id" class="dropdown">
+            <button
+              type="button"
+              class="btn dropdown-toggle btn-primary "
+              data-toggle="dropdown"
+            >
+              Dropdown button
+            </button>
+            <div class="dropdown-menu">
+              <a
+                class="dropdown-item"
+                id="RPSNone"
+                href="#"
+                onclick="RPSFuncNone()"
+                >No Selection</a
+              >
+              <a
+                class="dropdown-item"
+                id="RPSLinkOne"
+                href="#"
+                onclick="RPSFuncOne()"
+                >RPS(User vs Comp(w/Pics))</a
+              >
+              <a
+                class="dropdown-item"
+                id="RPSLinkTwo"
+                href="#"
+                onclick="RPSTwoButtons()"
+                >RPS(User v Comp)</a
+              >
+              <a
+                class="dropdown-item"
+                id="RPSLinkThree"
+                href="#"
+                onclick="RPSThreeButtons()"
+                >RPS(User v User)</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-container-4" id="RPSTwoHeader"></div>
+        <div class="flex-container-4 images" id="RPSInstructOne"></div>
+        <div class="flex-container-4" id="RPSInstructTwo">
+          <div id="PicInstructions"></div>
+        </div>
+      </div>
+
+      <div class="flex-container-4" id="RPSInstructThree"></div>
+      <h1 id="RPSTwoTitle" style="color: white;">
+        Challenge 3 Pt.2: Rock, Paper, Scissors(Qazi Edition)
+      </h1>
+
+      <!-- Clever RPS -->
+      <div class="cleverRPSContainer" id="clever-container-div"></div>
+
+      <!-- Change Button color -->
+      <div class="buttonChangeContainer" id="buttonChangeContainer-div">
+        <h1 id="change-header-color">Change Button Color!!</h1>
+        <div class="flex-container-4" id="flex-buttonChange-div">
+          <div>
+            <form action="">
+              <select
+                name="background"
+                id="buttonsColorChange"
+                onchange="buttonColorChange(this)"
+              >
+                <!--"this" element retrieves element once passed -->
+                <option value="random">Random</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option id="animationColor" value="colorAnimation"
+                  >Animation</option
+                >
+                <option id="resetColor" class="aniReset" value="reset"
+                  >Reset</option
+                >
+              </select>
+            </form>
+          </div>
+          <div>
+            <button type="button" class="btn btn-primary">
+              Wee!
+            </button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-danger">
+              Yahoo!
+            </button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-warning">
+              Google!
+            </button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-success">
+              FaceBook!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="blackjackContainer">
+        <h1>Challenge 6:BlackJack</h1>
+        <h3>
+          <span id="blackjack-result" style="color: black;">Let's Play!</span>
+        </h3>
+        <div class="flexbox-BJ-row1-container">
+          <div class="BJUserContainer" id = "your-box">
+              <h1>You:<span id = "your-blackjack-result"> 0</span></h1>
+          </div>
+          <div class="BJBotContainer" id = "Bot-Box">
+            <h1>Dealer:<span id = "bot-blackjack-result"> 0</span></h1>
+          </div>
+        </div>
+        <div class="GameButtonContainer" >
+          <div>
+          <button type="button" class="btn-lg mr-2 btn-primary " id = "BJ-Hit">
+            Hit
+          </button>
+          <button type="button" class="btn-lg mr-2 btn-warning " id = "BJ-Stand">
+            Stand
+          </button>
+          <button type="button" class="btn-lg btn-danger" id = "BJ-Deal">
+            Deal
+          </button>
+          </div>
+        </div>
+        <div class = "GameWinLossDrawTotal">
+          <table>
+            <thead>
+              <tr>
+                <th>Wins</th>
+                <th>Losses</th>
+                <th>Draws</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span id = "your-Wins">0</span></td>
+                <td><span id = "your-losses">0</span></td>
+                <td><span id = "your-draws">0</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="CleverJS/MiniProjectCSSJS.js"></script>
+  </body>
+</html>
